@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,17 @@
 		711792BC2540962800D4EDA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711792BA2540962800D4EDA9 /* LaunchScreen.storyboard */; };
 		711792C72540962800D4EDA9 /* FacebookReactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711792C62540962800D4EDA9 /* FacebookReactionsTests.swift */; };
 		711792D22540962800D4EDA9 /* FacebookReactionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711792D12540962800D4EDA9 /* FacebookReactionsUITests.swift */; };
+		711792EB2540967B00D4EDA9 /* angry.gif in Resources */ = {isa = PBXBuildFile; fileRef = 711792E52540967A00D4EDA9 /* angry.gif */; };
+		711792EC2540967B00D4EDA9 /* love.gif in Resources */ = {isa = PBXBuildFile; fileRef = 711792E62540967A00D4EDA9 /* love.gif */; };
+		711792ED2540967B00D4EDA9 /* like.gif in Resources */ = {isa = PBXBuildFile; fileRef = 711792E72540967A00D4EDA9 /* like.gif */; };
+		711792EE2540967B00D4EDA9 /* sad.gif in Resources */ = {isa = PBXBuildFile; fileRef = 711792E82540967A00D4EDA9 /* sad.gif */; };
+		711792EF2540967B00D4EDA9 /* haha.gif in Resources */ = {isa = PBXBuildFile; fileRef = 711792E92540967B00D4EDA9 /* haha.gif */; };
+		711792F02540967B00D4EDA9 /* wow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 711792EA2540967B00D4EDA9 /* wow.gif */; };
+		711792FD2540969700D4EDA9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711792FC2540969700D4EDA9 /* Home.swift */; };
+		711793052540999E00D4EDA9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711793042540999E00D4EDA9 /* Post.swift */; };
+		716B30342541096E00E568F1 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B30332541096E00E568F1 /* PostView.swift */; };
+		716B303925410FA500E568F1 /* ReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B303825410FA500E568F1 /* ReactionView.swift */; };
+		716B303F2541104C00E568F1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 716B303E2541104C00E568F1 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,16 @@
 		711792CD2540962800D4EDA9 /* FacebookReactionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookReactionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		711792D12540962800D4EDA9 /* FacebookReactionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookReactionsUITests.swift; sourceTree = "<group>"; };
 		711792D32540962800D4EDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711792E52540967A00D4EDA9 /* angry.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = angry.gif; sourceTree = "<group>"; };
+		711792E62540967A00D4EDA9 /* love.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = love.gif; sourceTree = "<group>"; };
+		711792E72540967A00D4EDA9 /* like.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = like.gif; sourceTree = "<group>"; };
+		711792E82540967A00D4EDA9 /* sad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sad.gif; sourceTree = "<group>"; };
+		711792E92540967B00D4EDA9 /* haha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = haha.gif; sourceTree = "<group>"; };
+		711792EA2540967B00D4EDA9 /* wow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wow.gif; sourceTree = "<group>"; };
+		711792FC2540969700D4EDA9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		711793042540999E00D4EDA9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		716B30332541096E00E568F1 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		716B303825410FA500E568F1 /* ReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716B303F2541104C00E568F1 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +121,9 @@
 		711792AE2540962600D4EDA9 /* FacebookReactions */ = {
 			isa = PBXGroup;
 			children = (
+				711792E42540964D00D4EDA9 /* reactions */,
+				711792E32540964900D4EDA9 /* Model */,
+				711792E22540964400D4EDA9 /* View */,
 				711792AF2540962600D4EDA9 /* AppDelegate.swift */,
 				711792B12540962600D4EDA9 /* SceneDelegate.swift */,
 				711792B32540962600D4EDA9 /* ContentView.swift */,
@@ -136,6 +161,37 @@
 			path = FacebookReactionsUITests;
 			sourceTree = "<group>";
 		};
+		711792E22540964400D4EDA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				711792FC2540969700D4EDA9 /* Home.swift */,
+				716B30332541096E00E568F1 /* PostView.swift */,
+				716B303825410FA500E568F1 /* ReactionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		711792E32540964900D4EDA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				711793042540999E00D4EDA9 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		711792E42540964D00D4EDA9 /* reactions */ = {
+			isa = PBXGroup;
+			children = (
+				711792E52540967A00D4EDA9 /* angry.gif */,
+				711792E92540967B00D4EDA9 /* haha.gif */,
+				711792E72540967A00D4EDA9 /* like.gif */,
+				711792E62540967A00D4EDA9 /* love.gif */,
+				711792E82540967A00D4EDA9 /* sad.gif */,
+				711792EA2540967B00D4EDA9 /* wow.gif */,
+			);
+			path = reactions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +208,9 @@
 			dependencies = (
 			);
 			name = FacebookReactions;
+			packageProductDependencies = (
+				716B303E2541104C00E568F1 /* SDWebImageSwiftUI */,
+			);
 			productName = FacebookReactions;
 			productReference = 711792AC2540962600D4EDA9 /* FacebookReactions.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +282,9 @@
 				Base,
 			);
 			mainGroup = 711792A32540962600D4EDA9;
+			packageReferences = (
+				716B303D2541104C00E568F1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 711792AD2540962600D4EDA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,7 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				711792BC2540962800D4EDA9 /* LaunchScreen.storyboard in Resources */,
+				711792ED2540967B00D4EDA9 /* like.gif in Resources */,
+				711792EE2540967B00D4EDA9 /* sad.gif in Resources */,
+				711792F02540967B00D4EDA9 /* wow.gif in Resources */,
 				711792B92540962800D4EDA9 /* Preview Assets.xcassets in Resources */,
+				711792EC2540967B00D4EDA9 /* love.gif in Resources */,
+				711792EB2540967B00D4EDA9 /* angry.gif in Resources */,
+				711792EF2540967B00D4EDA9 /* haha.gif in Resources */,
 				711792B62540962800D4EDA9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +336,11 @@
 			files = (
 				711792B02540962600D4EDA9 /* AppDelegate.swift in Sources */,
 				711792B22540962600D4EDA9 /* SceneDelegate.swift in Sources */,
+				711792FD2540969700D4EDA9 /* Home.swift in Sources */,
 				711792B42540962600D4EDA9 /* ContentView.swift in Sources */,
+				716B303925410FA500E568F1 /* ReactionView.swift in Sources */,
+				716B30342541096E00E568F1 /* PostView.swift in Sources */,
+				711793052540999E00D4EDA9 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +669,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		716B303D2541104C00E568F1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		716B303E2541104C00E568F1 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 716B303D2541104C00E568F1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 711792A42540962600D4EDA9 /* Project object */;
 }
